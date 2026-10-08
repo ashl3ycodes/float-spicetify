@@ -1,0 +1,8 @@
+{
+  "name": "Float",
+  "description": "A compact, hover-driven Spotify: library and right sidebar rest as strips and slide open on hover, pushing the page. Inspired by maenDisease/Float.",
+  "main": "float.js",
+  "readme": "README.md",
+  "authors": [{ "name": "ashl3ycodes", "url": "https://github.com/ashl3ycodes" }],
+  "tags": ["layout", "compact", "sidebar"]
+}
