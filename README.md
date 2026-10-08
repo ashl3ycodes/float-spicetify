@@ -54,3 +54,7 @@ Float is [maenDisease](https://github.com/maenDisease)'s idea, made for Discord.
 implementation for Spotify that borrows its behaviour and knob names.
 
 See also [float-vencord](https://github.com/ashl3ycodes/float-vencord), the Discord version.
+
+## License
+
+[AGPL-3.0](LICENSE)
