@@ -53,8 +53,6 @@ cropped. So the presets live between 800 and 1920 px; anything below 800 can't f
 Float is [maenDisease](https://github.com/maenDisease)'s idea, made for Discord. This is a new
 implementation for Spotify that borrows its behaviour and knob names.
 
-See also [float-vencord](https://github.com/ashl3ycodes/float-vencord), the Discord version.
-
 ## License
 
 [AGPL-3.0](LICENSE)
