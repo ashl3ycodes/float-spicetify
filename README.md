@@ -7,6 +7,7 @@ The idea of <a href="https://github.com/maenDisease/Float">maenDisease/Float</a>
 - The secondary top-bar buttons only show while you hover the bar.
 - Per-button switches for the player bar (lyrics, queue, connect, volume, miniplayer).
 - **Width presets** at 1100 / 900 / 820 px.
+- Only kicks in when Spotify is 1300 px wide or less (like tiled to half the screen). Full-width Spotify stays exactly as your theme draws it.
 
 ---
 
@@ -32,6 +33,7 @@ Leave Your Library in Spotify's collapsed (icons only) mode. Float opens it on h
 ## 🔧 ⦁ Customizing
 The knobs sit in the `:root` block at the top of the CSS inside `float.js`:
 
+`--float-animations` (`1`):  `0` kills every animation, panels snap open and shut  
 `--float-sidebar-width` (`72`):  Library strip width (unitless px), `0` hides it  
 `--sidebar-hover-width` (`280px`):  Library width when open  
 `--slide-window-on-hover` (`1`):  `1` the page slides right, `0` the library covers it  
@@ -42,6 +44,10 @@ The knobs sit in the `:root` block at the top of the CSS inside `float.js`:
 `--sidebar-transition-duration` / `--members-transition-duration` (`0.4s`):  Slide speed  
 `--toolbar-visibility` (`flex`):  `none` hides What's New / Friend Activity until the bar is hovered  
 `--playbar-lyrics` / `-queue` / `-connect` / `-volume` / `-miniplayer` (`flex`):  Player bar buttons  
+
+> Want Float at any width? Change the `1300px` in the `@media (max-width: 1300px)` line.
+
+> Float only uses `:hover` on the panels themselves and never on generic children (`> *`, bare tags), because Chromium pools every hover rule together: one sloppy hover rule makes EVERY hover in Spotify restyle whole chunks of the page.
 
 ### Edit the file, then apply again:
 ```shell
