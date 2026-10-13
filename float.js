@@ -228,7 +228,7 @@ body:not(.fsd-activated) {
     display: var(--toolbar-visibility);
   }
 
-  .main-nowPlayingBar-lyricsButton {
+  [data-testid="lyrics-button"] {
     display: var(--playbar-lyrics);
   }
   .main-nowPlayingBar-extraControls {
